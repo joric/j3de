@@ -1,0 +1,31 @@
+  hey everyone...
+
+  this is a PREVIEW of clax, my portable keyframing engine.
+  it is 100% functional, but lacks a good documentation,
+  and examples... only 1 'visual' example included, for watcomC/DOS
+  platforms. i successfuly ran it under linux too, but lost the example.
+
+  expect the final version in the start of august.
+
+  greetings to adept, kombat, mali and memon for supporting this project
+  (technical/moral support :)
+
+  to compile an example (with watcom c) :
+  
+    chdir to src/
+    type 'wmake -f makewc.mak' 
+    copy clax.lib to examples/
+    chdir to examples/
+    type 'wcl386 test.c clax.lib /i=..\src' to compile the example
+    it will produce test.exe , that will run 1.3ds in current directory,
+    in 320x200x8bit mode.
+
+
+  for any suggestions/questions/insults, send e-mail to borzom@hotmail.com
+
+  and read the incomple docs in docs/ directory.
+
+
+
+  laters
+    - borzom

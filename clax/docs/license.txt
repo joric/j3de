@@ -1,0 +1,51 @@
+
+                     clax: a portable keyframing engine
+
+                                user license
+
+
+  you may use/distribute clax only if you accept and fully understand
+  the following conditions:
+
+  1) you are given this library free. therefore, i will not be
+     responsible for any damage, direct or indirect resulted from
+     use or misuse of this library. use it at your own risk.
+
+  2) no part of this code should be sold nor be part of a commercial
+     program or a program sold for money.
+
+  3) give credit where credit is due. if you use part(s) of this library
+     in your software, your product must clearly state that it uses clax.
+
+  4) if you use clax or parts of clax in a public production, you must
+     write me e-mail with pointers to your production.
+
+  5) you are given this library free. you can use any portion
+     of this library in any program you wish, following rules 1, 2, 3 and 4
+     above, provided that your program is also distributed free. you do
+     not have to distribute your sources, but if you do you may include
+     this library as well.
+
+  6) since you were given this library free, you cannot charge any
+     money for redistribution. you may charge reasonable amount
+     of money for redistribution only (<$10).
+
+  7) there will be no restriction on redistribution of this package
+     unless imposed specifically by me. following rule 6, you may
+     redistribute this library only in its current form and content.
+     you may only change the type of archiver to pack this set of files.
+     if part of this code is used in another free program and distributed
+     in source code form, you must provide a pointer to the original
+     package (this one) in your documentation, or include the original
+     package (this one) in your package, in full unchanged form, unless
+     u choose to use rule 8.
+
+  8) if you modify any source part of this library and wish to
+     redistribute it under similar term, you may do so, following
+     rule 6, including a document describing all changes made
+     by the author (you), including the original clax documentation
+     unchanged, and a pointer to the original package (this one).
+
+  9) this license may change in any further version of clax.
+
+  borzom@hotmail.com

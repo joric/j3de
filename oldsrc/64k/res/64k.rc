@@ -1,0 +1,138 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 0, 0, 139, 167
+STYLE DS_SYSMODAL | DS_SETFONT | DS_3DLOOK | DS_CENTER | WS_MINIMIZEBOX | 
+    WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+CAPTION "64k"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Windowed - must work anyway!",IDC_RADIO1,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,11,15,116,10
+    COMBOBOX        IDC_COMBO1,65,30,60,100,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Fullscreen",IDC_FULLSCREEN,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,11,32,48,10
+    DEFPUSHBUTTON   "OK",IDOK,15,57,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,71,57,50,14
+    GROUPBOX        "Setup",IDC_STATIC,7,5,125,45
+    LTEXT           "Hi, Mr. Dsteuz!\nSorry, nothing cewl this time =( \n\nkeys:\n2 - motion blur\n4 - fast forward\n""tilda"" - toggle console\n\n(c) Joric, Kurgan, 2001",
+                    IDC_STATIC,16,79,109,73
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 132
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTURES
+//
+
+IDR_TEXTURES1           TEXTURES                "raw_dct.tga"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// SCENES
+//
+
+IDR_SCENES1             SCENES                  "1.3ds"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// manifest
+//
+
+IDR_MANIFEST1           manifest                "64k.manifest"
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

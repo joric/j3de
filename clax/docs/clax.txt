@@ -1,0 +1,270 @@
+
+                     clax: a portable keyframing engine
+
+                       or 'Autodesk denies knowledge!'
+
+                         copyright (c) 1997 borzom
+
+                    version  0.10 (first public release)
+
+                               documentation
+
+
+ ----------------------------------------------------------------------------
+  (1) introduction
+ ----------------------------------------------------------------------------
+
+   NOTE: YOU CAN NOT USE AND/OR DISTRIBUTE CLAX AND/OR PARTS OF CLAX UNLESS
+   YOU FULLY UNDERSTAND AND ACCEPT CLAX LICENSE. (license.txt)
+
+   . what is it ? -----------------------------------------------------------
+
+     clax is a portable keyframing engine, designed for demos. originally,
+     it was supposed to be a 3dstudio keyframing engine, but it became a
+     portable keyframing engine with alot of goodies. if you dont know what
+     is demo scene, you should visit http://www.hornet.org.
+     clax is not a full 3d engine, but a keyframing-only engine, that
+     is designed to fit any existing 3d engine without any major changes.
+     included in this package are examples, and a minimal 3d engine that
+     uses clax.
+
+   . what is it for ? -------------------------------------------------------
+
+     as i said before, it is designed to use in demos. in further versions,
+     it may fit for games as well, actually this version too, but not as
+     easy.
+
+   . where to get the newest version ? --------------------------------------
+
+     on the net:
+       http://www.geocities.com/Clax                -- official clax homepage
+       ftp://ftp.cdrom.com/pub/demos/incoming/code  -- hornet archive
+
+     bbs:
+       coders/fx, sysoped by Civax: +972-7-6753224
+
+   . contacting the author --------------------------------------------------
+
+     i (borzom) is the main clax developer and project manager.
+     you can contact me via e-mail: borzom@hotmail.com, or via
+     coders/fx bbs. (see also 'where to get newest version').
+
+   . current clax contributors ----------------------------------------------
+
+     for current version (0.10) there are no contributors except Adept.
+
+     Adept/Esteem: Splines, Camera math, and alot of help.
+     Jare/Iguana:  3DS Loader based on Jare's 3DSRDR.C
+
+   . we need your support! --------------------------------------------------
+
+     well, yes, i need your support! i want this library to become
+     100% compatible with 3dstudio, support other modellers like
+     lightwave/3dsmax, become a game engine, develop full 3d engine
+     that is using clax, the choices are infinite :)
+     so if you think you can contribute to clax, that means become
+     official developer of clax, help to find and/or fix bugs, improve
+     the design, anything, just contact me.
+     also, please contact me about comments, suggestions, insults..
+     (see also 'contacting the author')
+
+ ----------------------------------------------------------------------------
+  (2) feautures
+ ----------------------------------------------------------------------------
+
+   . supported platforms ----------------------------------------------------
+
+     theoretically, clax will compile cleanly under any ansi-c compiler,
+     16bit and 32bit, but its highly recommended to use 32bit compiler.
+     note for this version: file load routines will work only on
+     little-endian machines, and i am too lazy to fix it in this version.
+     the hardware modules included in this version supports the following
+     compilers/platforms:
+
+     | OS       | graphics interface | compiler      | versions tested |
+     +----------+--------------------+---------------+-----------------+
+     | unix     | X11                | GNU C         | 2.7.2           |
+     | linux    | svgalib            | GNU C         | 2.7.2           |
+     | dos      | vga                | GNU C (djgpp) | 2b              |
+     |          |                    | Watcom C      | 10.6, 11.0      |
+     |          |                    | Borland C     | 3.1             |
+     | dos      | vesa               | GNU C (djgpp) | 2b              |
+     |          |                    | Watcom C      | 10.6, 11.0      |
+     |          |                    | Borland C     | 3.1             |
+
+     * versions tested means the compiler version.
+
+   . features ---------------------------------------------------------------
+
+     this is a list of major features of clax for this version:
+
+       highly portable and free :)
+       complete vector/matrix/quaternion libraries
+       collision detection
+       perfect error handling
+       both high-level and low-level interface
+       everything stored as linked lists
+       full hierarchy (cameras can be linked to objects, etc..)
+       clax does all transformation for you (optional)
+       internal file format (save/load)
+       can fit into any 3dengine without major changes
+
+     this is a list of supported features of 3dstudio 4.0:
+
+       fileformat support for .3DS binary files version 3.0 and 4.0,
+       and .ASC ascii meshes.
+
+       world tree supports:
+         objects, cameras, omni lights, spot lights, and materials
+
+       keyframer supports:
+         position, rotation, scale, color, fov, roll, morph and hide tracks
+         loop/repeat tracks
+         dummy objects
+         correct spline interpolation
+         almost correct quaternion interpolation
+
+     still missing features of 3dstudio 4.0:
+       spline interpolated morph
+       instance objects
+       saving .3DS binary files
+
+   . todo list --------------------------------------------------------------
+
+     i plan alot to do in next versions, but i need help for this project
+     (see 'we need your support!').
+     some of the major features i am planning to do:
+
+       100% support for 3dstudio 4.0
+       lightwave/3dsmax support
+       rewrite clax fileformat
+       implement physics
+       rewrite the whole library in C++
+       write a keyframing tutorial
+       develop a portable, high speed 3d engine
+       better design
+
+ ----------------------------------------------------------------------------
+  (3) archive index
+ ----------------------------------------------------------------------------
+
+   docs/          * this directory contains all documentation
+   examples/      * clax examples
+   hardware/      * hardware modules for examples
+   libs/          * pre-compiled libraries for GCC, DJGPP, WATCOM and Borland
+   mengine/       * mini-engine - portable minimal 3d engine that uses clax
+   src/           * clax source code
+   tools/         * tools
+   file_id.diz
+
+   docs/
+    clax.txt      * clax documentation (this file)
+    license.txt   * clax license agreement
+
+   examples/
+    example0.c    * clax example 0: ansi-c, hardware independant example
+    example1.c    * clax example 1: basic functions
+    example2.c    * clax example 2: keyframer
+    example3.c    * clax example 3: keyframer, internal transform
+    example4.c    * clax example 4: keyframer, internal structures+transform
+    example5.c    * clax example 5: keyframer, internal tracks
+    example6.c    * clax example 6: keyframer, shows material usage
+    example7.cc   * clax example 7: keyframer, c++
+    makebc.mak    * Borland C makefile
+    makedj.mak    * GNU C (djgpp port) makefile
+    makegcc.mak   * GNU C makefile
+    makewc.mak    * Watcom C makefile
+
+   hardware/
+    hw_linux.c    * linux svgalib hardware module
+    hw_vesa.c     * dos vesa hardware module
+    hw_vga.c      * dos vga hardware module
+    hw_x11.c      * unix X11 hardware module
+    hardware.h    * hardware modules include file
+
+   libs/
+    clax_dj.a     * GNU C (djgpp port, 2b) pre-compiled library
+    clax_gcc.a    * GNU C 2.7.2 pre-compiled library
+    clax_bc.lib   * Borland C 3.1 pre-compiled library
+    clax_wc.lib   * Watcom C 10.6 pre-compiled library
+
+   mengine/
+    scene.c       * main mini-engine routines
+    render.c      * polygon renderers
+    mengine.h     * mini-engine api include file
+    makebc.mak    * Borland C makefile
+    makedj.mak    * GNU C (djgpp port) makefile
+    makegcc.mak   * GNU C makefile
+    makewc.mak    * Watcom C makefile
+
+   misc/
+    3dsrdr.c      * original 3DS reader source by Jare/Iguana.
+    spline_3.c    * original spline source by Adept/Esteem.
+
+   src/
+    camera.c      * camera functions
+    clax.c        * main clax routines
+    file_3ds.c    * 3D Studio 4.0 fileformat driver
+    file_clx.c    * clax 0.10 fileformat driver
+    matrix.c      * matrix math
+    quatern.c     * quaternion math
+    spline.c      * spline interpolation
+    vector.c      * vector math
+    clax.h        * clax api include file
+    claxi.h       * clax internal include file
+    makebc.mak    * Borland C makefile
+    makedj.mak    * GNU C (djgpp port) makefile
+    makegcc.mak   * GNU C makefile
+    makewc.mak    * Watcom C makefile
+
+   tools/
+    3ds2clx.c     * 3D Studio 4.0 to clax fileformat converter
+    makebc.mak    * Borland C makefile
+    makedj.mak    * GNU C (djgpp port) makefile
+    makegcc.mak   * GNU C makefile
+    makewc.mak    * Watcom C makefile
+
+ ----------------------------------------------------------------------------
+  (4) library api notes
+ ----------------------------------------------------------------------------
+   notes on hardware modules compile / bizare functions
+
+ ----------------------------------------------------------------------------
+  (5) .clx file format (version 0.10)
+ ----------------------------------------------------------------------------
+
+ ----------------------------------------------------------------------------
+  (6) greetings
+ ----------------------------------------------------------------------------
+
+   well, here goes the greetings in alphabetical order.
+
+   adept        - thanks for all the help, and.. my structures rule! :)
+   atomic       - we'll never finish the intro
+   bazooka joe  - interpolating angle/axis is not a good idea :)
+   blackstain   - oldwarez rule!
+   bsm          - i want meshes!
+   civax        - waiting for movement'97...
+   crazycat     - i rule in duke3d!
+   cybereagle   - you lazy fuck, do something :)
+   dark spirit  - next time you see me on the street, atleast say hello :)
+   diffuse      - you lazy fuck, finish your engine!
+   dna groove   - you are bald.
+   hex          - your unreleased pictures for chinko rule!
+   hirmu!       - muna!
+   jare         - well, thanks for releasing 3dsrdr.c
+   kombat       - kombat says go byebye
+   mali         - your phone company sucks
+   mental trip  - i never got that atari800...
+   moonchild    - it wasnt me, really! :)
+   nyc          - luna 2 will never be released.
+   paso         - what about the damn music?!
+   rage         - you lazy fuck, finish the polyfillers!
+   rakoon       - same as crazycat...
+   riff-raff    - whats up with vengence 2?
+   scorpios     - uhh.. abuse!
+   silvatar     - wah, nothing..
+   sticky       - we are totally insane!
+   trex         - same as crazycat
+   turk182      - who are you anyway?
+   ex           - thanks for finding the bug

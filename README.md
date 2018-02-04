@@ -27,9 +27,9 @@ Controls
 Scenes
 ------
 
-The engine uses good old 3ds scenes with spline animation, played with Clax. The best editor for those scenes, without a doubt,
+The engine uses good old 3ds scenes with spline animation, played with Clax. The best editor for those scenes, is, without a doubt,
 3ds Max 1.0, released in 1996 (haven't changed much after that, except getting overweight, first version was only 20 Mb).
-Works just fine with a new 64-bit Sentinel Driver (you have to download it separately).
+Works just fine with the new 64-bit Sentinel Driver (you have to download it separately).
 In case if camera animation is broken or camera target disappears after reimport, try to create a new camera and copy animation tracks from the old one.
 In case if you got used to Blender, note that it doesn't yet import or export 3ds animation at all (checked at 2.75).
 
@@ -47,7 +47,7 @@ Note that original Clax does not support:
 * Probably a ton of other things
 
 OpenGL version uses (tries to use) vanilla Clax 0.10, so mind that scene won't load if it contains
-instances or referenced objects, so you have to make a full-blown copies of everything.
+instances or referenced objects, so you have to make full-blown copies of everything.
 This is terrible sizewise, but nevertheless, it works just fine without referencing (toolsmedia style).
 If anything, you can write your own handler, see the metaballs object for example ("Fx01" in 1.3ds).
 And the file can be well compressed anyway.

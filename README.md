@@ -9,7 +9,7 @@ Uses Clax keyframing library by Borzom.
 License
 -------
 
-Public domain, I guess. Clax may be linked as dll. You may not mention me (preferably).
+Public domain. Clax may be linked as dll. You may not mention me (preferably).
 Stencil shadows do not use z-fail because it is patented (there is no z-pass either).
 
 Controls
@@ -27,7 +27,7 @@ Controls
 Scenes
 ------
 
-The engine uses good old 3ds scenes with spline animation, played with Clax. The best editor for those scenes, is, without a doubt,
+The engine uses good old 3ds scenes with spline animation, played with Clax. The best editor for those scenes is without a doubt
 3ds Max 1.0, released in 1996 (haven't changed much after that, except getting overweight, first version was only 20 Mb).
 Works just fine with the new 64-bit Sentinel Driver (you have to download it separately).
 In case if camera animation is broken or camera target disappears after reimport, try to create a new camera and copy animation tracks from the old one.

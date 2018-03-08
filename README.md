@@ -54,7 +54,7 @@ And the file can be well compressed anyway.
 
 ### ~~Meatballs~~ Metaballs
 
-[![64k](http://img.youtube.com/vi/W8Oe9kMV36s/hqdefault.jpg)](https://www.youtube.com/watch?v=W8Oe9kMV36s)
+[![64k](http://img.youtube.com/vi/tvOltCXEHgU/hqdefault.jpg)](https://www.youtube.com/watch?v=tvOltCXEHgU)
 
 One scene uses pretty fast and robust 3-rd party metaballs code,
 based on Crystal Space Metaballs Demo (1999) by Denis Dmitriev.

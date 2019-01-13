@@ -1,19 +1,18 @@
-j3de
-====
+# j3de
 
-Originally written in 2001 as a softrender engine for 64k intros (see oldsrc folder).
-Uses Clax keyframing library by Borzom.
+Originally written in 2001 as a software render engine for 64k intros (see the oldsrc folder).
+Uses Clax keyframing library 0.10 (1997) by Borzom.
+
+## Video
 
 [![2ndreal](http://img.youtube.com/vi/81AnuDFmbEM/0.jpg)](https://www.youtube.com/watch?v=81AnuDFmbEM)
 
-License
--------
+## License
 
 Public domain. Clax may be linked as dll. You may not mention me (preferably).
 Stencil shadows do not use z-fail because it is patented (there is no z-pass either).
 
-Controls
---------
+## Controls
 
 * Tab - switch cameras
 * Up/Down - toggle rendering mode (wireframe/solid/textured)
@@ -24,8 +23,7 @@ Controls
 * PgUp/PgDn - load previous/next scene
 
 
-Scenes
-------
+## Scenes
 
 The engine uses good old 3ds scenes with spline animation, played with Clax. The best editor for those scenes is without a doubt
 3ds Max 1.0, released in 1996 (haven't changed much after that, except getting overweight, first version was only 20 Mb).
@@ -34,8 +32,7 @@ In case if camera animation is broken or camera target disappears after reimport
 In case if you got used to Blender, note that it doesn't yet import or export 3ds animation at all (checked at 2.75).
 
 
-3-rd party code
----------------
+## 3-rd party code
 
 ### Clax
 
@@ -56,8 +53,7 @@ And the file can be well compressed anyway.
 
 [![64k](http://img.youtube.com/vi/DElcgXfELWg/hqdefault.jpg)](https://www.youtube.com/watch?v=DElcgXfELWg)
 
-
-One scene uses pretty fast and robust 3-rd party metaballs code,
+One of the scenes uses pretty fast and robust 3-rd party metaballs code,
 based on Crystal Space Metaballs Demo (1999) by Denis Dmitriev.
 The code recursively travels through adjacent cells and ought to (must to) be better than O(n^3).
 
